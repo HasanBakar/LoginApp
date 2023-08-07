@@ -44,7 +44,7 @@ export default function Username() {
               <button className={styles.btn} type="submit">Let&apos;s Go</button>
             </div>
             <div className="text-center py-4">
-              <span className="text-gray-500">
+              <span className="text-gray-500 mb-2">
                 Not a Member 
                  <Link className="pl-2 text-red-500" to="/register">
                    Register Now
