@@ -22,9 +22,9 @@ export default function Username() {
   });
   return (
     <div className="container max-auto">
-      <Toaster position="top-center" reverseOrder= {false}></Toaster>
+      <Toaster position="top-center" reverseOrder={false}></Toaster>
       <div className="flex justify-center items-center h-screen">
-        <div className={styles.glass}>
+        <div className={styles.glass} style={{ width: "50%" }}>
           <div className="title flex flex-col items-center">
             <h3 className="text-5xl font-bold ">Hello again</h3>
             <span className="py-4 text-center w-2/3 text-xl text-gray-500">
@@ -36,18 +36,21 @@ export default function Username() {
               <img className={styles.profile_img} src={avatar} alt="avatar" />
             </div>
             <div className="flex flex-col items-center gap-6">
-              <input {...formik.getFieldProps('username')}
+              <input
+                {...formik.getFieldProps("username")}
                 className={styles.textbox}
                 type="text"
                 placeholder="Username"
               />
-              <button className={styles.btn} type="submit">Let&apos;s Go</button>
+              <button className={styles.btn} type="submit">
+                Let&apos;s Go
+              </button>
             </div>
             <div className="text-center py-4">
               <span className="text-gray-500 mb-2">
-                Not a Member 
-                 <Link className="pl-2 text-red-500" to="/register">
-                   Register Now
+                Not a Member
+                <Link className="pl-2 text-red-500" to="/register">
+                  Register Now
                 </Link>
               </span>
             </div>

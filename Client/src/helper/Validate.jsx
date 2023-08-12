@@ -13,6 +13,17 @@ export async function passwordValidate(values) {
     return errors;
 }
 
+/* validate reset password */
+export async function resetPasswordValidation(values) {
+    const errors = passwordVerify({}, values);
+
+    if(values.password !== values.confirm_pwd){
+        errors.exist =toast.error("Password not match.....!")
+    }
+    return errors;
+}
+
+
 /* Password validation */
 function passwordVerify(errors = {}, values) {
     const Regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?]).{4,}$/;

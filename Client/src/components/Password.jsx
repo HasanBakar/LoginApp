@@ -23,7 +23,7 @@ export default function Password() {
     <div className="container max-auto">
       <Toaster position="top-center" reverseOrder={false}></Toaster>
       <div className="flex justify-center items-center h-screen">
-        <div className={styles.glass}>
+        <div className={styles.glass} style={{ width: "50%" }}>
           <div className="title flex flex-col items-center">
             <h3 className="text-5xl font-bold ">Hello again</h3>
             <span className="py-4 text-center w-2/3 text-xl text-gray-500">
